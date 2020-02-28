@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>List of products</title>
+  <link href="/src/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h2>Товары</h2>
+      <button class="add">+</button>
+    </header>
+    <ul class="list-container"></ul>
+  </div>
+<div class="bg hidden">
+    <div class="modal modal-add hidden">
+      <form id="form-add">
+        <label for="add-title">Название</label>
+        <input class="input" type="text" id="add-title">
+        <label for="add-price">Стоимость</label>
+        <input class="input" type="number" id="add-price">
+        <button class="submit">Добавить</button>
+      </form>
+      <button class="cancel">×</button>
+    </div>
+    <div class="modal modal-edit hidden">
+      <form id="form-edit">
+        <label for="edit-title">Название</label>
+        <input class="input" type="text" id="edit-title">
+        <label for="edit-price">Стоимость</label>
+        <input class="input" type="number" id="edit-price">
+        <button class="submit">Сохранить</button>
+      </form>
+      <button class="cancel">×</button>
+    </div>
+</div>
+</body>
+
+</html>
